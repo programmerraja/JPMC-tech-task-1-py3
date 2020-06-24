@@ -99,20 +99,19 @@ For the first module of this project will we need  to accomplish the following:
   <li> top_bid -> has highest price and size</li>
   <li> top_ask-> has lowest price and size</li>
  </ol>
-                 
-                   <br/>
-                    <br/>
+  <br/>
+  <br/>
   the getDataPoint function code is<br/>
                    <pre>
  def getDataPoint(quote):
-   """ Produce all of the needed values to generate a datapoint """
-   """ ------------- Update this function ------------- """
-   stock = quote['stock']
-   bid_price = float(quote['top_bid']['price'])
-   ask_price = float(quote['top_ask']['price'])
-   #to find Trade price adding bid_price and ask_price and divide it by 2
-   price =bid_price
-   return stock, bid_price, ask_price, price
+     """ Produce all of the needed values to generate a datapoint """
+     """ ------------- Update this function ------------- """
+     stock = quote['stock']
+     bid_price = float(quote['top_bid']['price'])
+     ask_price = float(quote['top_ask']['price'])
+     #to find Trade price adding bid_price and ask_price and divide it by 2
+     price =bid_price
+     return stock, bid_price, ask_price, price
                    </pre>
                    we need to debug this program  in this method we have to make the modifications to compute
 for the right stock price. This means we have to change how `price` is computed
@@ -121,26 +120,26 @@ for. The formula is (bid_price+ask_price) / 2.
                    so now the code look like this 
                    <pre>
 def getDataPoint(quote):
-  """ Produce all of the needed values to generate a datapoint """
-  """ ------------- Update this function ------------- """
-  stock = quote['stock']
-  bid_price = float(quote['top_bid']['price'])
-  ask_price = float(quote['top_ask']['price'])
-  #to find Trade price adding bid_price and ask_price and divide it by 2
-  price =( bid_price+ask_price)/2
-  return stock, bid_price, ask_price, price
+     """ Produce all of the needed values to generate a datapoint """
+     """ ------------- Update this function ------------- """
+     stock = quote['stock']
+     bid_price = float(quote['top_bid']['price'])
+     ask_price = float(quote['top_ask']['price'])
+     #to find Trade price adding bid_price and ask_price and divide it by 2
+     price =( bid_price+ask_price)/2
+     return stock, bid_price, ask_price, price
  </pre>
           <h3> second d let's fix(debug) the main function </h3>
           the main function look like this 
           <pre>
           # Query the price once every N seconds.
           for _ in iter(range(N)):
-           quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
-           """ ----------- Update to get the ratio --------------- """
-           for quote in quotes:
-            stock, bid_price, ask_price, price = getDataPoint(quote)
-            print ("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
-            print ("Ratio %s" % getRatio(price, price))
+               quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
+               """ ----------- Update to get the ratio --------------- """
+               for quote in quotes:
+                stock, bid_price, ask_price, price = getDataPoint(quote)
+                print ("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
+                print ("Ratio %s" % getRatio(price, price))
            </pre>
            if you find anything wrong in this code if yes congrats
           <br/>
@@ -152,25 +151,25 @@ def getDataPoint(quote):
           #dictionary used to store the prices of two different stack ("abc" "DEF")
           prices={}
           for _ in iter(range(N)):
-           quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
-           """ ----------- Update to get the ratio --------------- """
-           for quote in quotes:
-            stock, bid_price, ask_price, price = getDataPoint(quote)
-            print ("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
-            #appending the prices to array 
-            prices[stock]=price
-            print ("Ratio %s" % getRatio(prices["ABC"], prices["DEF]))
+              quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
+              """ ----------- Update to get the ratio --------------- """
+              for quote in quotes:
+               stock, bid_price, ask_price, price = getDataPoint(quote)
+               print ("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
+               #appending the prices to array 
+               prices[stock]=price
+               print ("Ratio %s" % getRatio(prices["ABC"], prices["DEF]))
             </pre>
     we fix most of the code 
     <br/>
     <h3>last let's fix(debug) the getRatio function in client3.py</h3>
     getRatio code is given below 
        <pre>
-       def getRatio(price_a, price_b):
-             """ Get ratio of price_a and price_b """
-             """ ------------- Update this function ------------- """
-             """ Also create some unit tests for this function in client_test.py """
-             return 1
+def getRatio(price_a, price_b):
+       """ Get ratio of price_a and price_b """
+       """ ------------- Update this function ------------- """
+       """ Also create some unit tests for this function in client_test.py """
+       return 1
  </pre>
  
  did you see that this function always return 1 it is serious problem we need to fix this. we need to find ratio between price_a and price_b
@@ -188,12 +187,12 @@ def getDataPoint(quote):
  so the code look like this
  <pre>
 def getRatio(price_a, price_b):
-  """ Get ratio of price_a and price_b """
-  """ ------------- Update this function ------------- """
-  """ Also create some unit tests for this function in client_test.py """
-        #using ternary operator to avoid ZeroDivision error
-  ratio=(price_a/price_b) if price_b>0 else  None
-  return ratio
+    """ Get ratio of price_a and price_b """
+    """ ------------- Update this function ------------- """
+    """ Also create some unit tests for this function in client_test.py """
+          #using ternary operator to avoid ZeroDivision error
+    ratio=(price_a/price_b) if price_b>0 else  None
+    return ratio
  </pre>
 <hr>
 
