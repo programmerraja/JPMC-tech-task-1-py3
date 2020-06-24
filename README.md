@@ -65,21 +65,21 @@ For the first module of this project will we need  to accomplish the following:
                   <ol>
                   <li>Stack market</li>
                   First we need to know little bit about stack market for that i suggest some source below <br/>
-                  <h5>Note:Few resource  in Tamil</h5><br/>
+                  <h5>Note:Few resource  in Tamil</h5>
  <a href="https://www.youtube.com/watch?v=RfOKl-ya5BY&t=804s"> Youtube video</a><br/>
  <a href="https://www.youtube.com/watch?v=0itXlKkGyJI"> Youtube video</a><br/>
- <a href="https://www.youtube.com/watch?v=Xn7KWR9EOGQ">Youtube video</a><br/>
+ <a href="https://www.youtube.com/watch?v=Xn7KWR9EOGQ">Youtube video</a><br/><br/>
                   <li>bid price and ask price </li>
                    second we need to know about bid and ask in sharemarket.
                   <h5>bid</h5>
                   bid is the highest price an invester will to pay for the share 
                   <h5>ask</h5>
                   ask is the lowset price shareholder is willing to pay on shares<br/><br/>
-                  if you still dont get it read this example<br/><br/>
+                  if you still dont get it. read this example<br/><br/>
                   let consider a apple store he sell the apple for 200 rupess.the customer is ask apple for 160 rupess<br/><br/>
                   So the amount said by owner(200) is ask price<br/>
                   The amount said by customer(160) is bid price<br/><br/>
-         so now you have some basic of stack market it time to debug the code 
+         so now you have some basic ideas about stack market it's time to debug the code 
          <br/>
 <h3>First let's fix(debug) the getDataPoint function in client3.py</h3>
     This function used to seperate the data that get from the server.the data get from server look like this 
@@ -100,7 +100,7 @@ For the first module of this project will we need  to accomplish the following:
                      price =bid_price
                      return stock, bid_price, ask_price, price
                    </pre>
-                   we need to debug this program  In this method, we have to make the modifications to compute
+                   we need to debug this program  in this method we have to make the modifications to compute
 for the right stock price. This means we have to change how `price` is computed
 for. The formula is (bid_price+ask_price) / 2.
                    <br>
@@ -159,7 +159,7 @@ for. The formula is (bid_price+ask_price) / 2.
              return 1
  </pre>
  
- did you see that this function always return 1 it is serious problem we need to fix this to calculate we need to find ratio between price_a and price_b
+ did you see that this function always return 1 it is serious problem we need to fix this. we need to find ratio between price_a and price_b
  so the code look like this 
  <pre>
  def getRatio(price_a, price_b):
@@ -219,5 +219,8 @@ some resource may help you<br/>
  </ol>
  
  </hr>
+ 
+ 
+ 
  
  
