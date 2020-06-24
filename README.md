@@ -31,8 +31,10 @@ Before implementing this request using perspective, first you’ll need to inter
 
 
 For the first module of this project will need you to accomplish the following:
-
+<hr>
 1.Set up your system by downloading the necessary repository, files, tools and dependencies<br/>
 2.Fix the broken client datafeed script in the repository by making the required adjustments to it.<br/>
 3.Generate a patch file of the changes you made<br/>
 4.Bonus task: Add unit tests in the test script in the repository.<br/>
+
+Before get in to task see how to setup your enviroment for this task <a href="https://insidesherpa.s3.amazonaws.com/vinternships/companyassets/Sj7temL583QAYpHXD/setup_devenv_m1_v6.pdf" >Click Here</a> 
