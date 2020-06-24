@@ -56,6 +56,7 @@ For the first module of this project will need you to accomplish the following:
      <li>client3.py</li>
           This program  get the data from server3.py and calculate the trade price and ratio of two stack price.<br/>
           <br/>
+          </ol>
       Before debug this program we need to Know little bit about stack market (not necessary) so it will easy for us to debug<br/>
                   <ol>
                   <li>Stack market</li>
