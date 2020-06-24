@@ -8,8 +8,10 @@ before going to task i like to share how i get this internship.
 I get the internship on this website insidesherpa <a href="https://www.insidesherpa.com/"> click here</a>
 other than JPMorgan Chase Software Engineering lot's of company offer free virtual internship including Microsoft,......
 
-This repo for the task 1
-<mark> WARNING: My English not so good applogize me </mark>
+This repo for the task 1<br/>
+<hr>
+<h3> WARNING: My English not so good. so applogize me </h3>
+<hr>
 <h1>Task1 </h1>
 
 To know more About Task1 <a hre="https://www.insidesherpa.com/modules/R5iK7HMxJGBgaSbvk/gtAhtcvke9AFCzqME">Click Here</a>
@@ -205,9 +207,8 @@ some resource may help you
 <a href="https://www.youtube.com/watch?v=1Lfv5tUGsn8">cilck here</a>
 <a href="https://www.youtube.com/watch?v=3kzHmaeozDI">cilck here</a>
 <hr>
-<h1>concluion:<h1>
+<h1>concluion:</h1>
  What are the things i learn from this task 
- 
  <ol>
  <li> Stock Market Basic</li>
  <li> Unit Testing</li>
