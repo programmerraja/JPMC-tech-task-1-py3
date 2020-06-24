@@ -36,10 +36,10 @@ For the first module of this project will need you to accomplish the following:
 3.Generate a patch file of the changes you made<br/>
 4.Bonus task: Add unit tests in the test script in the repository.<br/>
 <hr>
-<h4>Step1:Set up your system </h4>
+<h1>Step1:Set up your system </h1>
  how to setup your enviroment for this task <a href="https://insidesherpa.s3.amazonaws.com/vinternships/companyassets/Sj7temL583QAYpHXD/setup_devenv_m1_v6.pdf" >Click Here</a> <br/>
  <hr>
- <h4>Step2:Fixing the broken clinet datafeed script</h4>
+ <h1>Step2:Fixing the broken clinet datafeed script</h1>
  
  Before fixing the client code we need to know what the code is actually doing there is 3 python file in the task
  <ol>
@@ -166,28 +166,35 @@ for. The formula is (bid_price+ask_price) / 2.
  so the code look like this
  <pre>
 def getRatio(price_a, price_b):
-	""" Get ratio of price_a and price_b """
-	""" ------------- Update this function ------------- """
-	""" Also create some unit tests for this function in client_test.py """
+  """ Get ratio of price_a and price_b """
+  """ ------------- Update this function ------------- """
+  """ Also create some unit tests for this function in client_test.py """
         #using ternary operator to avoid ZeroDivision error
-	ratio=(price_a/price_b) if price_b>0 else  None
-	return ratio
+  ratio=(price_a/price_b) if price_b>0 else  None
+  return ratio
  </pre>
+ <br/>
 <hr>
 
-<h4>step 3: Generate a patch file</h4>
+<h1>step 3: Generate a patch file</h1>
 Follow this steps to create patch file 
 
 Fire up a terminal, enter the repository via the terminal you opened (via the cd
 <repo_name_here> aka change directory command) and do the following commands
-(one line, one command)
-git add -A
-git config user.email "<your_email_address>"
-git config user.name "<your_name>"
-git commit -m 'Create Patch File'
-git format-patch -1 HEAD
+(one line, one command)<br/>
+<ol>
+<li>git add -A</li>
+,li>git config user.email "<your_email_address>"</li>
+<li>git config user.name "<your_name>"</li>
+<li>git commit -m 'Create Patch File'</li>
+<li>git format-patch -1 HEAD</li>
+</ol>
 <br/>
 <br/>
 The final command, i.e. git format-patch -1 HEAD, should produce the .patch file
 you’d want to submit to complete this module. It will be located in the directory
 where you executed the command.
+<hr>
+
+
+
