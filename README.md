@@ -10,7 +10,7 @@ other than JPMorgan Chase Software Engineering lot's of company offer free virtu
 
 This repo for the task 1
 
-<h3>Task1 </h3>
+<h1>Task1 </h1>
 
 To know more About Task1 <a hre="https://www.insidesherpa.com/modules/R5iK7HMxJGBgaSbvk/gtAhtcvke9AFCzqME">Click Here</a>
 
@@ -173,7 +173,6 @@ def getRatio(price_a, price_b):
   ratio=(price_a/price_b) if price_b>0 else  None
   return ratio
  </pre>
- <br/>
 <hr>
 
 <h1>step 3: Generate a patch file</h1>
@@ -184,7 +183,7 @@ Fire up a terminal, enter the repository via the terminal you opened (via the cd
 (one line, one command)<br/>
 <ol>
 <li>git add -A</li>
-,li>git config user.email "<your_email_address>"</li>
+<li>git config user.email "<your_email_address>"</li>
 <li>git config user.name "<your_name>"</li>
 <li>git commit -m 'Create Patch File'</li>
 <li>git format-patch -1 HEAD</li>
@@ -198,3 +197,7 @@ where you executed the command.
 
 
 
+<h1>step 4: Bonus task Add unit tests in the test script in the repository</h1>
+
+I going to give work for you so do it on your own 
+some resource may help you 
