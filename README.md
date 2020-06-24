@@ -95,10 +95,10 @@ For the first module of this project will we need  to accomplish the following:
  <ol style="list-style:none;">
   <li> id-> unique id </li>
   <li> timestamp-> time</li>
-                 <li>stock->stock type ABC or DEF<li>
+  <li>stock->stock type ABC or DEF</li>
   <li> top_bid -> has highest price and size</li>
   <li> top_ask-> has lowest price and size</li>
-  
+ </ol>
                  
                    <br/>
                     <br/>
