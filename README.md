@@ -175,5 +175,19 @@ def getRatio(price_a, price_b):
  </pre>
 <hr>
 
+<h4>step 3: Generate a patch file</h4>
+Follow this steps to create patch file 
 
-
+Fire up a terminal, enter the repository via the terminal you opened (via the cd
+<repo_name_here> aka change directory command) and do the following commands
+(one line, one command)
+git add -A
+git config user.email "<your_email_address>"
+git config user.name "<your_name>"
+git commit -m 'Create Patch File'
+git format-patch -1 HEAD
+<br/>
+<br/>
+The final command, i.e. git format-patch -1 HEAD, should produce the .patch file
+you’d want to submit to complete this module. It will be located in the directory
+where you executed the command.
