@@ -120,7 +120,7 @@ for. The formula is (bid_price+ask_price) / 2.
             print ("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
             print ("Ratio %s" % getRatio(price, price))
            </pre>
-           if you find any wrong in this code if yes congrats
+           if you find anything wrong in this code if yes congrats
           <br/>
           <br/>
           if you see that we pass the same price from same stack(DEF) to getRatio function so we need to update this by using some datastructure you can use array or dictionary 
@@ -173,3 +173,7 @@ def getRatio(price_a, price_b):
 	ratio=(price_a/price_b) if price_b>0 else  None
 	return ratio
  </pre>
+<hr>
+
+
+
