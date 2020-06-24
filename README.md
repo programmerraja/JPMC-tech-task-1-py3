@@ -8,7 +8,6 @@ before going to task i like to share how i get this internship.
 I get the internship on this website insidesherpa <a href="https://www.insidesherpa.com/"> click here</a>
 other than JPMorgan Chase Software Engineering lot's of company offer free virtual internship including Microsoft,......
 
-
 This repo for the task 1
 
 <h3>Task1 </h3>
