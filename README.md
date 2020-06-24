@@ -162,8 +162,21 @@ for. The formula is (bid_price+ask_price) / 2.
      return ratio
  </pre>
  
- but still we have a 
-    
+ but still we have a problem what if the price_b is zero we have big serious problem to fix this we need to check if the price_b is zero or not 
+ so the code is 
+ <pre>
+ 
+def getRatio(price_a, price_b):
+	""" Get ratio of price_a and price_b """
+	""" ------------- Update this function ------------- """
+	""" Also create some unit tests for this function in client_test.py """
+        #using ternary operator to avoid ZeroDivision error
+	ratio=(price_a/price_b) if price_b>0 else  None
+	return ratio
+ </pre>
+ 
+ 
+ 
            
 
           
