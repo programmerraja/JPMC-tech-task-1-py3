@@ -69,4 +69,25 @@ For the first module of this project will need you to accomplish the following:
                   let consider a apple store he sell the apple for 200 rupess.the customer is ask apple for 160 rupess<br/>
                   so the amount said by owner(200) is ask price<br/>
                   the amount said by customer(160) is bid price<br/>
+         so now you have some basic of stack market it time to debug the code 
+         <br/>
+         First let's debug the getDataPoint function in client3.py
+         <br/>
+                   this function used to seperate the data that get from the server
+                   the data get from server look like this 
+                   <br/>
+                   [{'id': '0.3597486737475911', 'stock': 'ABC', 'timestamp': '2019-02-10 10:07:43.237974', 'top_bid': {'price': 118.13, 'size': 145}, 'top_ask': {'price': 116.63, 'size': 31}}, {'id': '0.3597486737475911', 'stock': 'DEF', 'timestamp': '2019-02-10 10:07:43.237974', 'top_bid': {'price': 115.14, 'size': 12}, 'top_ask': {'price': 117.87, 'size': 3}}]
+                   <br/>
+                   the getDataPoint function code is  <br/>
+                   <pre>
+                   """ Produce all of the needed values to generate a datapoint """
+                   """ ------------- Update this function ------------- """
+                   stock = quote['stock']
+                   bid_price = float(quote['top_bid']['price'])
+                   ask_price = float(quote['top_ask']['price'])
+                   #to find Trade price adding bid_price and ask_price and divide it by 2
+                   price =bid_price
+                   return stock, bid_price, ask_price, price
+                   </pre>
+
 
