@@ -55,21 +55,20 @@ For the first module of this project will we need  to accomplish the following:
  <ol>
      <li>Server3.py</li>
         This program is used to serve a stack market data to client by using HttpServer . It read the data from the excel file (test.excel) and send the data to 
-        client3.py to knower read the source code<br/>
+        client3.py to know more read the source code<br/>
         <br/>
      <li>client3.py</li>
           This program  get the data from server3.py and calculate the trade price and ratio of two stack price.<br/>
           <br/>
           </ol>
-      Before debug this program we need to Know little bit about stack market (not necessary) so it will easy for us to debug<br/>
+      Before debug this program we need to Know about something  so it will easy for us to debug the code <br/>
                   <ol>
                   <li>Stack market</li>
                   First we need to know little bit about stack market for that i suggest some source below <br/>
                   <h5>Note:Few resource  in Tamil</h5><br/>
- <a href="https://www.youtube.com/watch?v=RfOKl-ya5BY&t=804s"> Youtube video</a>
- <a href="https://www.youtube.com/watch?v=0itXlKkGyJI"> Youtube video</a>
- <a href="https://www.youtube.com/watch?v=Xn7KWR9EOGQ">Youtube video</a>
- 
+ <a href="https://www.youtube.com/watch?v=RfOKl-ya5BY&t=804s"> Youtube video</a><br/>
+ <a href="https://www.youtube.com/watch?v=0itXlKkGyJI"> Youtube video</a><br/>
+ <a href="https://www.youtube.com/watch?v=Xn7KWR9EOGQ">Youtube video</a><br/>
                   <li>bid price and ask price </li>
                    second we need to know about bid and ask in sharemarket.
                   <h5>bid</h5>
@@ -220,8 +219,5 @@ some resource may help you<br/>
  </ol>
  
  </hr>
- 
- 
- 
  
  
