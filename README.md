@@ -71,7 +71,7 @@ For the first module of this project will need you to accomplish the following:
                   the amount said by customer(160) is bid price<br/>
          so now you have some basic of stack market it time to debug the code 
          <br/>
-         <h2>First let's debug the getDataPoint function in client3.py<h2>
+         <h2>First let's fix(debug) the getDataPoint function in client3.py<h2>
          <br/>
                    this function used to seperate the data that get from the server
                    the data get from server look like this 
@@ -108,7 +108,7 @@ for. The formula is (bid_price+ask_price) / 2.
                      price =( bid_price+ask_price)/2
                      return stock, bid_price, ask_price, price
  </pre>
-          <h2> second d let's debug the main function </h2>
+          <h2> second d let's fix(debug) the main function </h2>
           the main function look like this 
           <pre>
           # Query the price once every N seconds.
@@ -138,8 +138,32 @@ for. The formula is (bid_price+ask_price) / 2.
             #appending the prices to array 
             prices.append(price)
             print ("Ratio %s" % getRatio(prices[0], prices[1]))
-            
     we fix most of the code 
+    <br/>
+    <h2>last let's fix(debug) the getRatio function in client3.py<h2>
+    
+    getRatio code is given below 
+       <pre>
+       def getRatio(price_a, price_b):
+             """ Get ratio of price_a and price_b """
+             """ ------------- Update this function ------------- """
+             """ Also create some unit tests for this function in client_test.py """
+             return 1
+ </pre>
+ 
+ did you see that this function always return 1 it is serious problem we need to fix this to calculate we need to find ratio between price_a and price_b
+ so the code look like this 
+ <pre>
+ def getRatio(price_a, price_b):
+     """ Get ratio of price_a and price_b """
+     """ ------------- Update this function ------------- """
+     """ Also create some unit tests for this function in client_test.py """
+     ratio=(price_a/price_b) 
+     return ratio
+ </pre>
+ 
+ but still we have a 
+    
            
 
           
