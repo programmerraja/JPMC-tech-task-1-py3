@@ -40,34 +40,33 @@ For the first module of this project will need you to accomplish the following:
 <h4>Step1:Set up your system </h4>
  how to setup your enviroment for this task <a href="https://insidesherpa.s3.amazonaws.com/vinternships/companyassets/Sj7temL583QAYpHXD/setup_devenv_m1_v6.pdf" >Click Here</a> <br/>
  <hr>
- <h4>Step2:Fixing the broken clinet datafeed script<h4><br/>
- Before fixing the client code we need to know what the code is actually doing there is 3 python file in the task <br/>
-      1.Server3.py<br/>
-      2.Client3.py<br/>
-      3.Client_test.py<br/>
+ <h4>Step2:Fixing the broken clinet datafeed script<h4>
  
+ Before fixing the client code we need to know what the code is actually doing there is 3 python file in the task
+ <ol>
+      <li>Server3.py</li>
+      <li>Client3.py</li>
+      <li>Client_test.py</li>
+ </ol>
  so let's find what the file is doing <br/>
-    1.Server3.py<br/>
+ <ol>
+    <li>Server3.py</li>
         This program is used to serve a stack market data to client by using HttpServer . It read the data from the excel file (test.excel) and send the data to 
         client3.py to knower read the source code<br/>
-     2.client3.py<br/>
+     <li>client3.py</li>
           This program  get the data from server3.py and calculate the trade price and ratio of two stack price.<br/>
           Before debug this program we need to Know little bit about stack market (not necessary) so it will easy for us to debug
-          <ol>
- <li>1.Stack market</li>
- First we need to know little bit about stack market for that i suggest some source below 
- <li>2.bid price and ask price <li>
- second we need to know about bid and ask in sharemarket. <br/>
- <h2>bid</h2>
- bid is the highest price an invester will to pay for the share 
- <h2>ask</h2>
- ask is the lowset price shareholder is willing to pay on shares
- 
- if you still dont get it read this example
- 
- let consider a apple store he sell the apple for 200 rupess.the customer is ask apple for 160 rupess
- so the amount said by owner(200) is ask price
- the amount said by customer(160) is bid price
- 
-
+                  <ol>
+                  <li>1.Stack market</li>
+                  First we need to know little bit about stack market for that i suggest some source below 
+                  <li>2.bid price and ask price <li>
+                  second we need to know about bid and ask in sharemarket. <br/>
+                  <h2>bid</h2>
+                  bid is the highest price an invester will to pay for the share 
+                  <h2>ask</h2>
+                  ask is the lowset price shareholder is willing to pay on shares
+                  if you still dont get it read this example<br/>
+                  let consider a apple store he sell the apple for 200 rupess.the customer is ask apple for 160 rupess<br/>
+                  so the amount said by owner(200) is ask price<br/>
+                  the amount said by customer(160) is bid price<br/>
 
