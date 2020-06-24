@@ -131,12 +131,12 @@ for. The formula is (bid_price+ask_price) / 2.
            if you find anything wrong in this code if yes congrats
           <br/>
           <br/>
-          if you see that we pass the same price from same stack(DEF) to getRatio function so we need to update this by using some datastructure you can use array or dictionary 
-          i am going to use array so now the code is look like 
+          if you see that we pass the same price from same stack(DEF) to getRatio function so we need to update this by using some datastructure we going to use  dictionary 
+          now the code is look like 
           <pre>
           # Query the price once every N seconds.
-          #array used to store the prices of two different stack ("abc" "DEF")
-          prices=[]
+          #dictionary used to store the prices of two different stack ("abc" "DEF")
+          prices={}
           for _ in iter(range(N)):
            quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
            """ ----------- Update to get the ratio --------------- """
@@ -144,8 +144,8 @@ for. The formula is (bid_price+ask_price) / 2.
             stock, bid_price, ask_price, price = getDataPoint(quote)
             print ("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
             #appending the prices to array 
-            prices.append(price)
-            print ("Ratio %s" % getRatio(prices[0], prices[1]))
+            prices[stock]=price
+            print ("Ratio %s" % getRatio(prices["ABC"], prices["DEF]))
             </pre>
     we fix most of the code 
     <br/>
