@@ -76,18 +76,39 @@ For the first module of this project will need you to accomplish the following:
                    this function used to seperate the data that get from the server
                    the data get from server look like this 
                    <br/>
+                     <br/>
                    [{'id': '0.3597486737475911', 'stock': 'ABC', 'timestamp': '2019-02-10 10:07:43.237974', 'top_bid': {'price': 118.13, 'size': 145}, 'top_ask': {'price': 116.63, 'size': 31}}, {'id': '0.3597486737475911', 'stock': 'DEF', 'timestamp': '2019-02-10 10:07:43.237974', 'top_bid': {'price': 115.14, 'size': 12}, 'top_ask': {'price': 117.87, 'size': 3}}]
                    <br/>
+                    <br/>
                    the getDataPoint function code is  <br/>
                    <pre>
-                   """ Produce all of the needed values to generate a datapoint """
-                   """ ------------- Update this function ------------- """
-                   stock = quote['stock']
-                   bid_price = float(quote['top_bid']['price'])
-                   ask_price = float(quote['top_ask']['price'])
-                   #to find Trade price adding bid_price and ask_price and divide it by 2
-                   price =bid_price
-                   return stock, bid_price, ask_price, price
+                   def getDataPoint(quote):
+                     """ Produce all of the needed values to generate a datapoint """
+                     """ ------------- Update this function ------------- """
+                     stock = quote['stock']
+                     bid_price = float(quote['top_bid']['price'])
+                     ask_price = float(quote['top_ask']['price'])
+                     #to find Trade price adding bid_price and ask_price and divide it by 2
+                     price =bid_price
+                     return stock, bid_price, ask_price, price
                    </pre>
+                   we need to debug this program  In this method, we have to make the modifications to compute
+for the right stock price. This means we have to change how `price` is computed
+for. The formula is (bid_price+ask_price) / 2.
+                   <br>
+                   so now the code look like this 
+                   <pre>
+                   def getDataPoint(quote):
+                     """ Produce all of the needed values to generate a datapoint """
+                     """ ------------- Update this function ------------- """
+                     stock = quote['stock']
+                     bid_price = float(quote['top_bid']['price'])
+                     ask_price = float(quote['top_ask']['price'])
+                     #to find Trade price adding bid_price and ask_price and divide it by 2
+                     price =( bid_price+ask_price)/2
+                     return stock, bid_price, ask_price, price
+ </pre>
+                   
+                   
 
 
