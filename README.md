@@ -66,20 +66,19 @@ For the first module of this project will need you to accomplish the following:
                   <h5>ask</h5>
                   ask is the lowset price shareholder is willing to pay on shares<br/><br/>
                   if you still dont get it read this example<br/>
-                  let consider a apple store he sell the apple for 200 rupess.the customer is ask apple for 160 rupess<br/><br/>
+                  let consider a apple store he sell the apple for 200 rupess.the customer is ask apple for 160 rupess<br/>
                   So the amount said by owner(200) is ask price<br/><br/>
                   The amount said by customer(160) is bid price<br/><br/>
          so now you have some basic of stack market it time to debug the code 
          <br/>
-<h1>First let's fix(debug) the getDataPoint function in client3.py</h1>
+<h3>First let's fix(debug) the getDataPoint function in client3.py</h3>
     This function used to seperate the data that get from the server.the data get from server look like this 
                    <br/>
                      <br/>
                    [{'id': '0.3597486737475911', 'stock': 'ABC', 'timestamp': '2019-02-10 10:07:43.237974', 'top_bid': {'price': 118.13, 'size': 145}, 'top_ask': {'price': 116.63, 'size': 31}}, {'id': '0.3597486737475911', 'stock': 'DEF', 'timestamp': '2019-02-10 10:07:43.237974', 'top_bid': {'price': 115.14, 'size': 12}, 'top_ask': {'price': 117.87, 'size': 3}}]
                    <br/>
                     <br/>
-
-                   the getDataPoint function code is  <br/>
+  the getDataPoint function code is<br/>
                    <pre>
                    def getDataPoint(quote):
                      """ Produce all of the needed values to generate a datapoint """
@@ -107,7 +106,7 @@ for. The formula is (bid_price+ask_price) / 2.
                      price =( bid_price+ask_price)/2
                      return stock, bid_price, ask_price, price
  </pre>
-          <h2> second d let's fix(debug) the main function </h2>
+          <h3> second d let's fix(debug) the main function </h3>
           the main function look like this 
           <pre>
           # Query the price once every N seconds.
@@ -119,11 +118,11 @@ for. The formula is (bid_price+ask_price) / 2.
             print ("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
             print ("Ratio %s" % getRatio(price, price))
            </pre>
-           if you find any wrong in this  appericate yourself
+           if you find any wrong in this code if yes congrats
           <br/>
           <br/>
           if you see that we pass the same price from same stack(DEF) to getRatio function so we need to update this by using some datastructure you can use array or dictionary 
-          i am going to use array the code is below 
+          i am going to use array so now the code is look like 
           <pre>
           # Query the price once every N seconds.
           #array used to store the prices of two different stack ("abc" "DEF")
@@ -139,8 +138,7 @@ for. The formula is (bid_price+ask_price) / 2.
             print ("Ratio %s" % getRatio(prices[0], prices[1]))
     we fix most of the code 
     <br/>
-    <h2>last let's fix(debug) the getRatio function in client3.py<h2>
-    
+    <h3>last let's fix(debug) the getRatio function in client3.py<h3>
     getRatio code is given below 
        <pre>
        def getRatio(price_a, price_b):
@@ -161,8 +159,8 @@ for. The formula is (bid_price+ask_price) / 2.
      return ratio
  </pre>
  
- but still we have a problem what if the price_b is zero we have big serious problem to fix this we need to check if the price_b is zero or not 
- so the code is 
+ but still we have a problem what if the price_b is zero we have big serious problem.to fix this we need to check if the price_b is zero or not before divide
+ so the code look like this
  <pre>
 def getRatio(price_a, price_b):
 	""" Get ratio of price_a and price_b """
@@ -172,3 +170,4 @@ def getRatio(price_a, price_b):
 	ratio=(price_a/price_b) if price_b>0 else  None
 	return ratio
  </pre>
+ 
