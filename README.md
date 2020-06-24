@@ -82,7 +82,7 @@ For the first module of this project will we need  to accomplish the following:
    atlast finally the apple shop owner the lowset price that he can give apple to us is 180 and customer said the highest price 170 that he give for apple   <br/><br/>
                   So the amount said by owner(180) is ask price<br/>
                   The amount said by customer(170) is bid price<br/><br/>
-         when the bid and ask are equal there trade happen.
+         when the bid and ask are equal the will trade happen.
          so now you have some basic ideas about stack market it's time to debug the code 
          <br/>
 <h3>First let's fix(debug) the getDataPoint function in client3.py</h3>
