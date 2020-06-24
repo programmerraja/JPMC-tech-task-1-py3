@@ -55,7 +55,8 @@ For the first module of this project will need you to accomplish the following:
         <br/>
      <li>client3.py</li>
           This program  get the data from server3.py and calculate the trade price and ratio of two stack price.<br/>
-          Before debug this program we need to Know little bit about stack market (not necessary) so it will easy for us to debug<br/>
+          <br/>
+      Before debug this program we need to Know little bit about stack market (not necessary) so it will easy for us to debug<br/>
                   <ol>
                   <li>Stack market</li>
                   First we need to know little bit about stack market for that i suggest some source below 
@@ -170,4 +171,3 @@ def getRatio(price_a, price_b):
 	ratio=(price_a/price_b) if price_b>0 else  None
 	return ratio
  </pre>
- 
