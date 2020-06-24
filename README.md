@@ -71,7 +71,7 @@ For the first module of this project will need you to accomplish the following:
                   the amount said by customer(160) is bid price<br/>
          so now you have some basic of stack market it time to debug the code 
          <br/>
-         First let's debug the getDataPoint function in client3.py
+         <h2>First let's debug the getDataPoint function in client3.py<h2>
          <br/>
                    this function used to seperate the data that get from the server
                    the data get from server look like this 
@@ -108,7 +108,42 @@ for. The formula is (bid_price+ask_price) / 2.
                      price =( bid_price+ask_price)/2
                      return stock, bid_price, ask_price, price
  </pre>
-                   
-                   
+          <h2> second d let's debug the main function </h2>
+          the main function look like this 
+          <pre>
+          # Query the price once every N seconds.
+          for _ in iter(range(N)):
+           quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
+           """ ----------- Update to get the ratio --------------- """
+           for quote in quotes:
+            stock, bid_price, ask_price, price = getDataPoint(quote)
+            print ("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
+            print ("Ratio %s" % getRatio(price, price))
+           </pre>
+           if you find any wrong in this  appericate yourself
+          <br/>
+          <br/>
+          if you see that we pass the same price from same stack(DEF) to getRatio function so we need to update this by using some datastructure you can use array or dictionary 
+          i am going to use array the code is below 
+          <pre>
+          # Query the price once every N seconds.
+          #array used to store the prices of two different stack ("abc" "DEF")
+          prices=[]
+          for _ in iter(range(N)):
+           quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
+           """ ----------- Update to get the ratio --------------- """
+           for quote in quotes:
+            stock, bid_price, ask_price, price = getDataPoint(quote)
+            print ("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
+            #appending the prices to array 
+            prices.append(price)
+            print ("Ratio %s" % getRatio(prices[0], prices[1]))
+            
+    we fix most of the code 
+           
+
+          
+          
+          
 
 
