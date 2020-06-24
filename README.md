@@ -14,7 +14,7 @@ This repo for the task 1<br/>
 <hr>
 <h1>Task1 </h1>
 
-To know more About Task1 <a hre="https://www.insidesherpa.com/modules/R5iK7HMxJGBgaSbvk/gtAhtcvke9AFCzqME">Click Here</a>
+To know more About Task1 <a href="https://www.insidesherpa.com/modules/R5iK7HMxJGBgaSbvk/gtAhtcvke9AFCzqME">Click Here</a>
 
 Here is the background information on our task
 
@@ -64,7 +64,12 @@ For the first module of this project will we need  to accomplish the following:
       Before debug this program we need to Know little bit about stack market (not necessary) so it will easy for us to debug<br/>
                   <ol>
                   <li>Stack market</li>
-                  First we need to know little bit about stack market for that i suggest some source below 
+                  First we need to know little bit about stack market for that i suggest some source below <br/>
+                  <h5>Note:Few resource  in Tamil</h5><br/>
+ <a href="https://www.youtube.com/watch?v=RfOKl-ya5BY&t=804s"> Youtube video</a>
+ <a href="https://www.youtube.com/watch?v=0itXlKkGyJI"> Youtube video</a>
+ <a href="https://www.youtube.com/watch?v=Xn7KWR9EOGQ">Youtube video</a>
+ 
                   <li>bid price and ask price </li>
                    second we need to know about bid and ask in sharemarket.
                   <h5>bid</h5>
