@@ -47,27 +47,28 @@ For the first module of this project will need you to accomplish the following:
       <li>Client3.py</li>
       <li>Client_test.py</li>
  </ol>
- so let's find what the file is doing <br/>
+ So let's find what the file is doing <br/><br/>
  <ol>
-    <li>Server3.py</li>
+     <li>Server3.py</li>
         This program is used to serve a stack market data to client by using HttpServer . It read the data from the excel file (test.excel) and send the data to 
         client3.py to knower read the source code<br/>
+        <br/>
      <li>client3.py</li>
           This program  get the data from server3.py and calculate the trade price and ratio of two stack price.<br/>
-          Before debug this program we need to Know little bit about stack market (not necessary) so it will easy for us to debug
+          Before debug this program we need to Know little bit about stack market (not necessary) so it will easy for us to debug<br/>
                   <ol>
                   <li>Stack market</li>
                   First we need to know little bit about stack market for that i suggest some source below 
                   <li>bid price and ask price </li>
-                  second we need to know about bid and ask in sharemarket.
-                  <h2>bid</h2>
+                   second we need to know about bid and ask in sharemarket.
+                  <h1>bid</h1>
                   bid is the highest price an invester will to pay for the share 
-                  <h2>ask</h2>
-                  ask is the lowset price shareholder is willing to pay on shares<br/>
+                  <h1>ask</h1>
+                  ask is the lowset price shareholder is willing to pay on shares<br/><br/>
                   if you still dont get it read this example<br/>
-                  let consider a apple store he sell the apple for 200 rupess.the customer is ask apple for 160 rupess<br/>
-                  so the amount said by owner(200) is <bold>ask price</bold><br/>
-                  the amount said by customer(160) is <bold>bid price</bold><br/>
+                  let consider a apple store he sell the apple for 200 rupess.the customer is ask apple for 160 rupess<br/><br/>
+                  so the amount said by owner(200) is ask price<br/><br/>
+                  the amount said by customer(160) is bid price<br/>
          so now you have some basic of stack market it time to debug the code 
          <br/>
 <h1>First let's fix(debug) the getDataPoint function in client3.py</h1>
@@ -77,7 +78,7 @@ For the first module of this project will need you to accomplish the following:
                    [{'id': '0.3597486737475911', 'stock': 'ABC', 'timestamp': '2019-02-10 10:07:43.237974', 'top_bid': {'price': 118.13, 'size': 145}, 'top_ask': {'price': 116.63, 'size': 31}}, {'id': '0.3597486737475911', 'stock': 'DEF', 'timestamp': '2019-02-10 10:07:43.237974', 'top_bid': {'price': 115.14, 'size': 12}, 'top_ask': {'price': 117.87, 'size': 3}}]
                    <br/>
                     <br/>
-                    
+
                    the getDataPoint function code is  <br/>
                    <pre>
                    def getDataPoint(quote):
