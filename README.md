@@ -207,10 +207,10 @@ where you executed the command.
 <h1>step 4: Bonus task Add unit tests in the test script in the repository</h1>
 
 I going to give work for you so do it on your own <br/>
-some resource may help you 
-<a href="https://www.youtube.com/watch?v=6tNS--WetLI&t=1106s">cilck here</a>
-<a href="https://www.youtube.com/watch?v=1Lfv5tUGsn8">cilck here</a>
-<a href="https://www.youtube.com/watch?v=3kzHmaeozDI">cilck here</a>
+some resource may help you<br/> 
+<a href="https://www.youtube.com/watch?v=6tNS--WetLI&t=1106s">youtube videos</a><br/>
+<a href="https://www.youtube.com/watch?v=1Lfv5tUGsn8">youtube videos</a><br/>
+<a href="https://www.youtube.com/watch?v=3kzHmaeozDI">youtube videos</a><br/>
 <hr>
 <h1>concluion:</h1>
  What are the things i learn from this task 
