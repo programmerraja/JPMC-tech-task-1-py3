@@ -138,9 +138,10 @@ for. The formula is (bid_price+ask_price) / 2.
             #appending the prices to array 
             prices.append(price)
             print ("Ratio %s" % getRatio(prices[0], prices[1]))
+            </pre>
     we fix most of the code 
     <br/>
-    <h3>last let's fix(debug) the getRatio function in client3.py<h3>
+    <h3>last let's fix(debug) the getRatio function in client3.py</h3>
     getRatio code is given below 
        <pre>
        def getRatio(price_a, price_b):
