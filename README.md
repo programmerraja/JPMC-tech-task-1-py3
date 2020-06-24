@@ -67,9 +67,9 @@ For the first module of this project will need you to accomplish the following:
                   bid is the highest price an invester will to pay for the share 
                   <h5>ask</h5>
                   ask is the lowset price shareholder is willing to pay on shares<br/><br/>
-                  if you still dont get it read this example<br/>
-                  let consider a apple store he sell the apple for 200 rupess.the customer is ask apple for 160 rupess<br/>
-                  So the amount said by owner(200) is ask price<br/><br/>
+                  if you still dont get it read this example<br/><br/>
+                  let consider a apple store he sell the apple for 200 rupess.the customer is ask apple for 160 rupess<br/><br/>
+                  So the amount said by owner(200) is ask price<br/>
                   The amount said by customer(160) is bid price<br/><br/>
          so now you have some basic of stack market it time to debug the code 
          <br/>
