@@ -9,7 +9,7 @@ I get the internship on this website insidesherpa <a href="https://www.insideshe
 other than JPMorgan Chase Software Engineering lot's of company offer free virtual internship including Microsoft,......
 
 This repo for the task 1
-
+<mark> WARNING: My English not so good applogize me </mark>
 <h1>Task1 </h1>
 
 To know more About Task1 <a hre="https://www.insidesherpa.com/modules/R5iK7HMxJGBgaSbvk/gtAhtcvke9AFCzqME">Click Here</a>
@@ -29,12 +29,14 @@ Before implementing this request using perspective, first you’ll need to inter
 * Being familiar with python scripting language and command line basics is not required as you will be guided in this exercise
 
 
-For the first module of this project will need you to accomplish the following:
+For the first module of this project will we need  to accomplish the following:
 <hr>
+<h3>
 1.Set up your system by downloading the necessary repository, files, tools and dependencies<br/>
 2.Fix the broken client datafeed script in the repository by making the required adjustments to it.<br/>
 3.Generate a patch file of the changes you made<br/>
 4.Bonus task: Add unit tests in the test script in the repository.<br/>
+</h3>
 <hr>
 <h1>Step1:Set up your system </h1>
  how to setup your enviroment for this task <a href="https://insidesherpa.s3.amazonaws.com/vinternships/companyassets/Sj7temL583QAYpHXD/setup_devenv_m1_v6.pdf" >Click Here</a> <br/>
@@ -195,9 +197,25 @@ you’d want to submit to complete this module. It will be located in the direct
 where you executed the command.
 <hr>
 
-
-
 <h1>step 4: Bonus task Add unit tests in the test script in the repository</h1>
 
-I going to give work for you so do it on your own 
+I going to give work for you so do it on your own <br/>
 some resource may help you 
+<a href="https://www.youtube.com/watch?v=6tNS--WetLI&t=1106s">cilck here</a>
+<a href="https://www.youtube.com/watch?v=1Lfv5tUGsn8">cilck here</a>
+<a href="https://www.youtube.com/watch?v=3kzHmaeozDI">cilck here</a>
+<hr>
+<h1>concluion:<h1>
+ What are the things i learn from this task 
+ 
+ <ol>
+ <li> Stock Market Basic</li>
+ <li> Unit Testing</li>
+ </ol>
+ 
+ </hr>
+ 
+ 
+ 
+ 
+ 
