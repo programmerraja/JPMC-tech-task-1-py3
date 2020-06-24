@@ -36,5 +36,23 @@ For the first module of this project will need you to accomplish the following:
 2.Fix the broken client datafeed script in the repository by making the required adjustments to it.<br/>
 3.Generate a patch file of the changes you made<br/>
 4.Bonus task: Add unit tests in the test script in the repository.<br/>
+<hr>
+<h4>Step1</h4>
+<h3>Set up your system <h3>
+ how to setup your enviroment for this task <a href="https://insidesherpa.s3.amazonaws.com/vinternships/companyassets/Sj7temL583QAYpHXD/setup_devenv_m1_v6.pdf" >Click Here</a> 
+ 
+ <h4>Step2<h4>
+  <h3>Fixing the broken clinet datafeed script </h3>
+     before fixing the client code we need to know what the code is actually doing there is 3 python file in the task 
+      1.Server3.py<br/>
+      2.Client3.py<br/>
+      3.Client_test.py<br/>
+  
+  so let's find what the file is doing 
+    1.Server3.py<br/>
+        this program is used to serve a stack market data to client by using HttpServer . It read the data from the excel file (test.excel) and send the data to 
+        client3.py to knower read the source code
+     2.client3.py<br/>
 
-Before get in to task see how to setup your enviroment for this task <a href="https://insidesherpa.s3.amazonaws.com/vinternships/companyassets/Sj7temL583QAYpHXD/setup_devenv_m1_v6.pdf" >Click Here</a> 
+
+
