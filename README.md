@@ -39,7 +39,7 @@ For the first module of this project will need you to accomplish the following:
 <h4>Step1:Set up your system </h4>
  how to setup your enviroment for this task <a href="https://insidesherpa.s3.amazonaws.com/vinternships/companyassets/Sj7temL583QAYpHXD/setup_devenv_m1_v6.pdf" >Click Here</a> <br/>
  <hr>
- <h4>Step2:Fixing the broken clinet datafeed script<h4>
+ <h4>Step2:Fixing the broken clinet datafeed script</h4>
  
  Before fixing the client code we need to know what the code is actually doing there is 3 python file in the task
  <ol>
