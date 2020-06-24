@@ -56,29 +56,28 @@ For the first module of this project will need you to accomplish the following:
           This program  get the data from server3.py and calculate the trade price and ratio of two stack price.<br/>
           Before debug this program we need to Know little bit about stack market (not necessary) so it will easy for us to debug
                   <ol>
-                  <li>1.Stack market</li>
+                  <li>Stack market</li>
                   First we need to know little bit about stack market for that i suggest some source below 
-                  <li>2.bid price and ask price <li>
-                  second we need to know about bid and ask in sharemarket. <br/>
+                  <li>bid price and ask price </li>
+                  second we need to know about bid and ask in sharemarket.
                   <h2>bid</h2>
                   bid is the highest price an invester will to pay for the share 
                   <h2>ask</h2>
-                  ask is the lowset price shareholder is willing to pay on shares
+                  ask is the lowset price shareholder is willing to pay on shares<br/>
                   if you still dont get it read this example<br/>
                   let consider a apple store he sell the apple for 200 rupess.the customer is ask apple for 160 rupess<br/>
-                  so the amount said by owner(200) is ask price<br/>
-                  the amount said by customer(160) is bid price<br/>
+                  so the amount said by owner(200) is <bold>ask price</bold><br/>
+                  the amount said by customer(160) is <bold>bid price</bold><br/>
          so now you have some basic of stack market it time to debug the code 
          <br/>
-         <h2>First let's fix(debug) the getDataPoint function in client3.py<h2>
-         <br/>
-                   this function used to seperate the data that get from the server
-                   the data get from server look like this 
+<h1>First let's fix(debug) the getDataPoint function in client3.py</h1>
+    This function used to seperate the data that get from the server.the data get from server look like this 
                    <br/>
                      <br/>
                    [{'id': '0.3597486737475911', 'stock': 'ABC', 'timestamp': '2019-02-10 10:07:43.237974', 'top_bid': {'price': 118.13, 'size': 145}, 'top_ask': {'price': 116.63, 'size': 31}}, {'id': '0.3597486737475911', 'stock': 'DEF', 'timestamp': '2019-02-10 10:07:43.237974', 'top_bid': {'price': 115.14, 'size': 12}, 'top_ask': {'price': 117.87, 'size': 3}}]
                    <br/>
                     <br/>
+                    
                    the getDataPoint function code is  <br/>
                    <pre>
                    def getDataPoint(quote):
@@ -164,7 +163,6 @@ for. The formula is (bid_price+ask_price) / 2.
  but still we have a problem what if the price_b is zero we have big serious problem to fix this we need to check if the price_b is zero or not 
  so the code is 
  <pre>
- 
 def getRatio(price_a, price_b):
 	""" Get ratio of price_a and price_b """
 	""" ------------- Update this function ------------- """
@@ -173,13 +171,3 @@ def getRatio(price_a, price_b):
 	ratio=(price_a/price_b) if price_b>0 else  None
 	return ratio
  </pre>
- 
- 
- 
-           
-
-          
-          
-          
-
-
