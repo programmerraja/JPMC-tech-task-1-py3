@@ -34,10 +34,12 @@ Before implementing this request using perspective, first you’ll need to inter
 For the first module of this project will we need  to accomplish the following:
 <hr>
 <h3>
-1.Set up your system by downloading the necessary repository, files, tools and dependencies<br/>
-2.Fix the broken client datafeed script in the repository by making the required adjustments to it.<br/>
-3.Generate a patch file of the changes you made<br/>
-4.Bonus task: Add unit tests in the test script in the repository.<br/>
+ <br/>
+1.Set up your system by downloading the necessary repository, files, tools and dependencies<br/><br/>
+2.Fix the broken client datafeed script in the repository by making the required adjustments to it.<br/><br/>
+3.Generate a patch file of the changes you made<br/><br/>
+4.Bonus task: Add unit tests in the test script in the repository.<br/><br/>
+ 
 </h3>
 <hr>
 <h1>Step1:Set up your system </h1>
